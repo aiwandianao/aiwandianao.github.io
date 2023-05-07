@@ -142,6 +142,116 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-xhs笔试查漏补缺" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2023/05/07/xhs%E7%AC%94%E8%AF%95%E6%9F%A5%E6%BC%8F%E8%A1%A5%E7%BC%BA/">xhs笔试查漏补缺</a>
+    </h1>
+  
+
+        
+        <a href="/2023/05/07/xhs%E7%AC%94%E8%AF%95%E6%9F%A5%E6%BC%8F%E8%A1%A5%E7%BC%BA/" class="archive-article-date">
+  	<time datetime="2023-05-07T10:44:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-05-07</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="IPv6"><a href="#IPv6" class="headerlink" title="IPv6"></a>IPv6</h2><p> IPv6采用128位的地址空间，总地址数量是2的128次方</p>
+<h2 id="linux几个命令"><a href="#linux几个命令" class="headerlink" title="linux几个命令"></a>linux几个命令</h2><ol>
+<li>一次性定时任务：at</li>
+<li>定期循环任务:crontab</li>
+<li>atrm命令的作用是删除待执行任务队列中的指定任务。</li>
+</ol>
+<h1 id="go-defer-panic-recover详解-go-的异常处理"><a href="#go-defer-panic-recover详解-go-的异常处理" class="headerlink" title="go defer,panic,recover详解 go 的异常处理"></a>go defer,panic,recover详解 go 的异常处理</h1><p>defer后边会接一个函数，但该函数不会立刻被执行，而是等到包含它的程序返回时(包含它的函数执行了return语句、运行到函数结尾自动返回、对应的goroutine panic）defer函数才会被执行。通常用于资源释放、打印日志、异常捕获等</p>
+<h2 id="chown与chgrp"><a href="#chown与chgrp" class="headerlink" title="chown与chgrp"></a>chown与chgrp</h2><p>1.修改文件所有者和所属组的命令：chown<br>2.修改文件所属组的命令：chgrp</p>
+<h1 id="数据结构中常用稳定算法-x2F-不稳定算法"><a href="#数据结构中常用稳定算法-x2F-不稳定算法" class="headerlink" title="数据结构中常用稳定算法&#x2F;不稳定算法"></a>数据结构中常用稳定算法&#x2F;不稳定算法</h1><p>堆排序、快速排序、希尔排序、直接选择排序是不稳定的排序算法，</p>
+<p>而基数排序、冒泡排序、直接插入排序、折半插入排序、归并排序是稳定的排序算法。</p>
+<p>稳定算法：</p>
+<ol>
+<li>冒泡算法 时间复杂度：O(n^2)</li>
+<li>插入排序 时间复杂度：O(n^2)（直接插入）</li>
+<li>基数排序 时间复杂度：O(d(r+n))</li>
+<li>计算排序</li>
+<li>合并排序</li>
+<li>二叉排序树排序</li>
+</ol>
+<p>不稳定算法：</p>
+<ol>
+<li>选择排序</li>
+<li>希尔排序</li>
+<li>组合排序</li>
+<li>堆排序</li>
+<li>快速排序</li>
+</ol>
+<h1 id="动态规划"><a href="#动态规划" class="headerlink" title="动态规划"></a>动态规划</h1><p><strong>“三个特征”，分别是最优子结构、无后效性和重复子问题。</strong>这三个概念比较抽象，逐一解释一下。</p>
+<p><strong>1、最优子结构</strong></p>
+<p>最优子结构指的是，问题的最优解包含子问题的最优解。反过来说就是，我们可以通过子问题的最优解，推导出问题的最优解。如果我们把最优子结构，对应到我们前面定义的动态规划问题模型上，那我们也可以理解为，后面阶段的状态可以通过前面状态推导出来。</p>
+<p><strong>2、无后效性</strong></p>
+<p>无后效性，有两层含义，第一层含义是，在推导后面阶段状态的时候，我们只关心前面阶段的状态值，不关心这个状态是怎么一步步推导出来的。第二层含义是，某阶段状态一旦确定，就不受之后阶段的决策影响。无后效性是一个非常“宽松”的要求。只要满足前面提到的动态规划问题模型，其实基本上都会满足无后效性。</p>
+<p><strong>3、重复子问题</strong></p>
+<p>这个概念，前面一节，已经多次提到。用一句话概括就是： 不同的决策序列，到达某个相同的阶段时，可能会产生重复的状态。</p>
+<p><strong>贪心算法 是一种特殊的DP</strong>，理论上DP能够解决贪心能解决的所有问题，但是贪心算法能够确定存在一个选择，做此选择后的结果并不会比做其他选择差，以此保证最优。 关于DP和贪心的一个比较经典的案例是部分背包问题与0-1背包问题。</p>
+<h1 id="select调用最多只支持1024个文件描述符"><a href="#select调用最多只支持1024个文件描述符" class="headerlink" title="select调用最多只支持1024个文件描述符"></a>select调用最多只支持1024个文件描述符</h1><p>select中存放文件描述符的数组大小FD_SETSIZE为1024<br>进程的文件描述符上限默认是1024，正是因为这个原因，select设计时才把数组大小设计为1024</p>
+<h1 id="字符串前缀"><a href="#字符串前缀" class="headerlink" title="字符串前缀"></a>字符串前缀</h1><p>不包含空字符串</p>
+<h1 id="生产者消费者缓冲区-信号量"><a href="#生产者消费者缓冲区-信号量" class="headerlink" title="生产者消费者缓冲区 信号量"></a>生产者消费者缓冲区 信号量</h1>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">笔试复盘</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2023/05/07/xhs%E7%AC%94%E8%AF%95%E6%9F%A5%E6%BC%8F%E8%A1%A5%E7%BC%BA/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-hexo博客-美化" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -631,68 +741,6 @@
 
 
   
-    <article id="post-第一篇hexo博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2023/04/13/%E7%AC%AC%E4%B8%80%E7%AF%87hexo%E5%8D%9A%E5%AE%A2/">第一篇hexo博客</a>
-    </h1>
-  
-
-        
-        <a href="/2023/04/13/%E7%AC%AC%E4%B8%80%E7%AF%87hexo%E5%8D%9A%E5%AE%A2/" class="archive-article-date">
-  	<time datetime="2023-04-13T04:42:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-04-13</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2023/04/13/%E7%AC%AC%E4%B8%80%E7%AF%87hexo%E5%8D%9A%E5%AE%A2/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
     <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -882,6 +930,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">工具使用</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">笔试复盘</a>
               </li>
             
             <div class="clearfix"></div>
