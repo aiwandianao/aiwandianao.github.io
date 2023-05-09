@@ -8,12 +8,12 @@
   <link rel="dns-prefetch" href="http://example.com">
   <title>工作流审批初体验 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="工作流审批 flowable 在开源集成网站试了一下 设置工作流模型绑定用户 设计表单绑定表单用户发起流程上传 查看流程范围  流程可视化  自己再去待办任务里面给自己审批一下（准确的说，谁都可以上传）  登录上一级账户，可以看到刚才审批通过的任务到这边来了，选择审批    由于下一级还是设定成了 李四，所以他继续审批。 从王五发起人这里可以看到，完整的流转图，和流转记录。">
+  <meta name="description" content="[toc] 工作流审批 flowable在开源集成网站试了一下 设置工作流模型绑定用户 在最后一个节点那里可以选择流程类型——OA 还是 请假 设计表单拖拽个上传框 绑定表单为自己的流程绑上表单 用户发起流程上传 查看流程范围  流程可视化  自己再去待办任务里面给自己审批一下（准确的说，谁都可以上传）  登录上一级账户，可以看到刚才审批通过的任务到这边来了，选择审批    由于下一级还是设定成了">
 <meta property="og:type" content="article">
 <meta property="og:title" content="工作流审批初体验">
 <meta property="og:url" content="http://example.com/2023/05/09/%E5%B7%A5%E4%BD%9C%E6%B5%81%E5%AE%A1%E6%89%B9%E5%88%9D%E4%BD%93%E9%AA%8C/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="工作流审批 flowable 在开源集成网站试了一下 设置工作流模型绑定用户 设计表单绑定表单用户发起流程上传 查看流程范围  流程可视化  自己再去待办任务里面给自己审批一下（准确的说，谁都可以上传）  登录上一级账户，可以看到刚才审批通过的任务到这边来了，选择审批    由于下一级还是设定成了 李四，所以他继续审批。 从王五发起人这里可以看到，完整的流转图，和流转记录。">
+<meta property="og:description" content="[toc] 工作流审批 flowable在开源集成网站试了一下 设置工作流模型绑定用户 在最后一个节点那里可以选择流程类型——OA 还是 请假 设计表单拖拽个上传框 绑定表单为自己的流程绑上表单 用户发起流程上传 查看流程范围  流程可视化  自己再去待办任务里面给自己审批一下（准确的说，谁都可以上传）  登录上一级账户，可以看到刚才审批通过的任务到这边来了，选择审批    由于下一级还是设定成了">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/image-20230509171930927.png">
 <meta property="og:image" content="http://example.com/2023/05/09/%E5%B7%A5%E4%BD%9C%E6%B5%81%E5%AE%A1%E6%89%B9%E5%88%9D%E4%BD%93%E9%AA%8C/image-20230509170349167.png">
@@ -27,7 +27,7 @@
 <meta property="og:image" content="http://example.com/2023/05/09/%E5%B7%A5%E4%BD%9C%E6%B5%81%E5%AE%A1%E6%89%B9%E5%88%9D%E4%BD%93%E9%AA%8C/image-20230509171536319.png">
 <meta property="og:image" content="http://example.com/2023/05/09/%E5%B7%A5%E4%BD%9C%E6%B5%81%E5%AE%A1%E6%89%B9%E5%88%9D%E4%BD%93%E9%AA%8C/image-20230509171736218.png">
 <meta property="article:published_time" content="2023-05-09T09:00:39.000Z">
-<meta property="article:modified_time" content="2023-05-09T09:25:21.907Z">
+<meta property="article:modified_time" content="2023-05-09T09:29:05.255Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="项目插件">
 <meta name="twitter:card" content="summary">
@@ -177,10 +177,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>工作流审批 flowable</p>
-<p>在开源集成网站试了一下</p>
+        <p>[toc]</p>
+<h1 id="工作流审批-flowable"><a href="#工作流审批-flowable" class="headerlink" title="工作流审批 flowable"></a>工作流审批 flowable</h1><p>在开源集成网站试了一下</p>
 <h2 id="设置工作流模型"><a href="#设置工作流模型" class="headerlink" title="设置工作流模型"></a>设置工作流模型</h2><h3 id="绑定用户"><a href="#绑定用户" class="headerlink" title="绑定用户"></a>绑定用户</h3><p><img src="/image-20230509171930927.png" alt="image-20230509171930927"></p>
-<h1 id="设计表单"><a href="#设计表单" class="headerlink" title="设计表单"></a>设计表单</h1><h1 id="绑定表单"><a href="#绑定表单" class="headerlink" title="绑定表单"></a>绑定表单</h1><h1 id="用户发起流程"><a href="#用户发起流程" class="headerlink" title="用户发起流程"></a>用户发起流程</h1><h2 id="上传"><a href="#上传" class="headerlink" title="上传"></a>上传</h2><p><img src="/2023/05/09/%E5%B7%A5%E4%BD%9C%E6%B5%81%E5%AE%A1%E6%89%B9%E5%88%9D%E4%BD%93%E9%AA%8C/image-20230509170349167.png" alt="image-20230509170349167"></p>
+<p>在最后一个节点那里可以选择流程类型——OA 还是 请假</p>
+<h2 id="设计表单"><a href="#设计表单" class="headerlink" title="设计表单"></a>设计表单</h2><p>拖拽个上传框</p>
+<h2 id="绑定表单"><a href="#绑定表单" class="headerlink" title="绑定表单"></a>绑定表单</h2><p>为自己的流程绑上表单</p>
+<h1 id="用户发起流程"><a href="#用户发起流程" class="headerlink" title="用户发起流程"></a>用户发起流程</h1><h2 id="上传"><a href="#上传" class="headerlink" title="上传"></a>上传</h2><p><img src="/2023/05/09/%E5%B7%A5%E4%BD%9C%E6%B5%81%E5%AE%A1%E6%89%B9%E5%88%9D%E4%BD%93%E9%AA%8C/image-20230509170349167.png" alt="image-20230509170349167"></p>
 <h3 id="查看流程范围"><a href="#查看流程范围" class="headerlink" title="查看流程范围"></a>查看流程范围</h3><p><img src="/2023/05/09/%E5%B7%A5%E4%BD%9C%E6%B5%81%E5%AE%A1%E6%89%B9%E5%88%9D%E4%BD%93%E9%AA%8C/image-20230509170502361.png" alt="image-20230509170502361"></p>
 <p><img src="/2023/05/09/%E5%B7%A5%E4%BD%9C%E6%B5%81%E5%AE%A1%E6%89%B9%E5%88%9D%E4%BD%93%E9%AA%8C/image-20230509170544276.png" alt="image-20230509170544276"></p>
 <h3 id="流程可视化"><a href="#流程可视化" class="headerlink" title="流程可视化"></a>流程可视化</h3><p><img src="/2023/05/09/%E5%B7%A5%E4%BD%9C%E6%B5%81%E5%AE%A1%E6%89%B9%E5%88%9D%E4%BD%93%E9%AA%8C/image-20230509170609128.png" alt="image-20230509170609128"></p>
@@ -194,6 +197,8 @@
 <p>由于下一级还是设定成了 李四，所以他继续审批。</p>
 <p>从王五发起人这里可以看到，完整的流转图，和流转记录。</p>
 <p><img src="/2023/05/09/%E5%B7%A5%E4%BD%9C%E6%B5%81%E5%AE%A1%E6%89%B9%E5%88%9D%E4%BD%93%E9%AA%8C/image-20230509171736218.png" alt="image-20230509171736218"></p>
+<h1 id="请假流程与OA流程"><a href="#请假流程与OA流程" class="headerlink" title="请假流程与OA流程"></a>请假流程与OA流程</h1><p>请假流程和OA流程是两个不同的工作流分类。OA流程是一种办公自动化系统，它可以帮助企业实现信息化管理，包括请假、报销、审批等等。请假流程是OA系统中的一个子流程，它主要用于员工请假申请的审批。具体的操作流程和内容可能因公司而异，但一般情况下，员工需要填写请假表单，部门经理审批，总经理审批，最后流程结束。</p>
+<h1 id="子集关系"><a href="#子集关系" class="headerlink" title="子集关系"></a>子集关系</h1><p>请假流程和审批流程是不同的工作流分类，但是可以把审批流程做成请假流程。具体来说，员工请假申请的审批流程就是一个典型的审批流程，它可以在OA系统中进行管理。如果您想要将审批流程做成请假流程，您可以在OA系统中创建一个新的请假流程，然后将审批流程添加到该请假流程中。这样，员工就可以使用新的请假流程来提交请假申请，并且该申请将按照您定义的审批流程进行处理。</p>
 
       
 
